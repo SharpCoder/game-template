@@ -19,8 +19,6 @@ export const DefaultScene2D = new Scene<unknown>({
     init: (engine) => {
         engine.settings.fogColor = [1, 1, 1, 1];
         const { camera } = DefaultScene2D;
-
-        // camera.setZ(-600);
     },
     status: 'initializing',
 });
@@ -42,6 +40,13 @@ const rectangle: Obj3d = {
     offsets: [-w / 2, -h / 2, 0],
     position: [200, 200, 0],
     rotation: [0, 0, 0],
+    texture: {
+        uri: 'assets/stick.png',
+        enabled: true,
+        repeat_horizontal: 'clamp_to_edge',
+        repeat_vertical: 'clamp_to_edge',
+    },
+    texcoords: rect2D(1, 1),
     update: (time, engine) => {
         const { gl } = engine;
         rectangle.rotation[0] += rads(time / 20);
