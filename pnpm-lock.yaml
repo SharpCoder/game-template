@@ -8,7 +8,7 @@ specifiers:
   tslib: ^2.6.0
   typescript: ^5.0.2
   vite: ^4.4.5
-  webgl-engine: file://../webgl-engine/
+  webgl-engine: ../webgl-engine/
 
 devDependencies:
   '@sveltejs/vite-plugin-svelte': 2.4.6_svelte@4.2.1+vite@4.4.9
@@ -18,7 +18,7 @@ devDependencies:
   tslib: 2.6.2
   typescript: 5.2.2
   vite: 4.4.9
-  webgl-engine: file:../webgl-engine
+  webgl-engine: link:../webgl-engine
 
 packages:
 
@@ -969,10 +969,4 @@ packages:
 
   /wrappy/1.0.2:
     resolution: {integrity: sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ==}
-    dev: true
-
-  file:../webgl-engine:
-    resolution: {directory: ../webgl-engine, type: directory}
-    name: webgl-engine
-    version: 1.0.4
     dev: true

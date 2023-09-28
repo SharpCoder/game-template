@@ -2,6 +2,7 @@ import './app.css';
 import App from './App.svelte';
 import { Engine } from 'webgl-engine';
 import { DefaultScene } from './scenes/defaultScene';
+import { DefaultScene2D } from './scenes/scene2D';
 
 const engine = new Engine();
 
@@ -9,6 +10,7 @@ const engine = new Engine();
 window['gameEngine'] = engine;
 
 // TODO: Manage scenes
+engine.addScene(DefaultScene2D);
 engine.addScene(DefaultScene);
 
 function draw() {
