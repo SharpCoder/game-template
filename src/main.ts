@@ -10,8 +10,8 @@ const engine = new Engine();
 window['gameEngine'] = engine;
 
 // TODO: Manage scenes
-engine.addScene(DefaultScene2D);
 engine.addScene(DefaultScene);
+engine.addScene(DefaultScene2D);
 
 function draw() {
     engine.draw();
